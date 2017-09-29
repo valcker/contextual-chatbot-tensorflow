@@ -1,21 +1,22 @@
+import pickle
+import json
+import random
+
 # NLP stuff
 import nltk
 # nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
-# from nltk.stem.snowball import FrenchStemmer
-# stemmer = FrenchStemmer()
 
 # TensorFlow stuff
 import numpy as np
 import tflearn
 import tensorflow as tf
-import random
 
-import pickle
+stemmer = LancasterStemmer()
+# from nltk.stem.snowball import FrenchStemmer
+# stemmer = FrenchStemmer()
 
 # load json file
-import json
 with open('intents.json') as json_data:
     intents = json.load(json_data)
 

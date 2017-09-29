@@ -30,8 +30,8 @@ def bow(sentence, words, show_details=False):
             if w == s:
                 bag[i] = 1
                 if show_details:
-                    print ("found in bag %s" % w)
-    return(np.array(bag))
+                    print("found in bag %s" % w)
+    return np.array(bag)
 
 def classify(sentence):
     # generate probabilities from the model
